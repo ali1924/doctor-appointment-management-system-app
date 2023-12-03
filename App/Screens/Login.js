@@ -10,6 +10,7 @@ import {
 import React from "react";
 import app from "../../assets/icon.png";
 import Colors from "../../assets/Shared/Colors";
+import SignInWithOAuth from "../Components/SignInWithOAuth";
 export default function Login() {
   return (
     <View>
@@ -23,7 +24,7 @@ export default function Login() {
           Book Appointments Effortlessly and manage your heath journey
         </Text>
         {/* Login Button */}
-        <TouchableOpacity
+        {/* <TouchableOpacity
           style={styles.loginButton}
           onPress={() => console.log("Login")}
         >
@@ -35,7 +36,8 @@ export default function Login() {
           >
             Login with Google
           </Text>
-        </TouchableOpacity>
+        </TouchableOpacity> */}
+        <SignInWithOAuth/>
       </View>
     </View>
   );
