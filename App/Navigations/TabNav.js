@@ -9,7 +9,7 @@ const Tab = createBottomTabNavigator();
 export default function TabNavigation() {
   return (
     <Tab.Navigator
-      screenOptions={({ route }) => ({
+      screenOptions={{({ route }) => ({
         tabBarIcon: ({ focused, color, size }) => {
           let iconName;
 
@@ -27,7 +27,7 @@ export default function TabNavigation() {
       tabBarOptions={{
         activeTintColor: "tomato",
         inactiveTintColor: "gray",
-      }}
+      }}}
     >
       <Tab.Screen name="Home" component={Home} />
       <Tab.Screen name="Appointment" component={Appointment} />
